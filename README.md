@@ -1,1 +1,1 @@
-# Roblox
+loadstring(game:HttpGet("SCRIPT"))()
