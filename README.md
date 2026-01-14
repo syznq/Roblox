@@ -32,4 +32,4 @@ IN NO EVENT SHALL VEZEKK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARI
 ## ACKNOWLEDGMENT
 By accessing, downloading, or using the Software, you acknowledge that you have read, understood, and agree to be bound by these terms. These terms constitute a legally binding agreement between you and VEZEKK.
 
-**SECURITY NOTICE**: This repository is monitored. Unauthorized access attempts are logged and may be reported to relevant authorities.
+**SECURITY NOTICE**: Scripts are mointored, if you're caught attempting to deobfuscate and then reuploading it as your own will result in the enforcement of this.
