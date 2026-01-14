@@ -1,25 +1,35 @@
-PROPRIETARY LICENSE - ALL RIGHTS RESERVED
-Copyright (c) 2026 Vezekk. All rights reserved.
+# VEZEKK PROPRIETARY SOFTWARE LICENSE
+**Version 2.3.4 - January 2026**
 
-STRICT TERMS OF USE:
-This github repo and all associated files are the exclusive intellectual property of Vezekk.
+## LEGAL NOTICE - ALL RIGHTS RESERVED
+Copyright © 2026 VEZEKK. All rights reserved.
 
-PROHIBITED ACTIONS:
-• ANY unauthorized distribution, sharing, or leaking
-• Reverse engineering, deobfuscation, or decompilation attempts
-• Modification, adaptation, or derivative works
-• Commercial or non-commercial redistribution
-• Removal of obfuscation or protection mechanisms
+## TERMS AND CONDITIONS
 
-ENFORCEMENT:
-Violations will result in:
-• Immediate license termination
-• DMCA takedown requests
-• Potential legal action for damages
-• Public blacklisting
-• IP/HWID bans from all associated services
+This repository and all associated files, code, documentation, and intellectual property (collectively, the "Software") are the exclusive property of VEZEKK. Access to this Software is granted solely under the strict terms outlined herein.
 
-This github repo is provided "AS IS" with ZERO tolerance for theft.
-By using these scripts, you acknowledge these terms are legally binding.
+### STRICTLY PROHIBITED ACTIVITIES:
+- **Distribution or Sharing**: Any unauthorized distribution, sharing, leaking, or transfer of the Software to third parties
+- **Reverse Engineering**: Any attempt to decompile, deobfuscate, disassemble, or otherwise reverse engineer the Software
+- **Derivative Works**: Creation of modifications, adaptations, or derivative works based on the Software
+- **Commercial Use**: Any commercial exploitation, resale, or monetization of the Software
+- **Circumvention**: Any attempt to remove, bypass, or disable the Software's protection mechanisms
 
-NO WARRANTIES PROVIDED. USE AT YOUR OWN RISK.
+### ENFORCEMENT PROVISIONS:
+Violations of these terms will result in immediate and severe consequences, including but not limited to:
+- Automatic termination of all license rights
+- Submission of DMCA takedown notices
+- Legal proceedings for damages and injunctive relief
+- Permanent blacklisting from all VEZEKK services and products
+- Implementation of hardware and IP-based access restrictions
+
+### DISCLAIMER OF WARRANTIES:
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. VEZEKK DISCLAIMS ALL WARRANTIES INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+### LIMITATION OF LIABILITY:
+IN NO EVENT SHALL VEZEKK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+## ACKNOWLEDGMENT
+By accessing, downloading, or using the Software, you acknowledge that you have read, understood, and agree to be bound by these terms. These terms constitute a legally binding agreement between you and VEZEKK.
+
+**SECURITY NOTICE**: This repository is monitored. Unauthorized access attempts are logged and may be reported to relevant authorities.
