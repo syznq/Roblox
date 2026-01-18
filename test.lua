@@ -8,55 +8,19 @@ local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
-		Legacy = {
-			Main = Color3.fromHSV(262/360, 60/255, 34/255),
-			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
-			Tertiary = Color3.fromHSV(260/360, 60/255, 148/255),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Serika = {
-			Main = Color3.fromRGB(50, 52, 55),
-			Secondary = Color3.fromRGB(80, 82, 85),
-			Tertiary = Color3.fromRGB(226, 183, 20),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
+		Light = {
+			Main = Color3.fromRGB(250, 250, 250),
+			Secondary = Color3.fromRGB(255, 255, 255),
+			Tertiary = Color3.fromRGB(0, 122, 204),
+			StrongText = Color3.fromRGB(0, 0, 0),
+			WeakText = Color3.fromRGB(100, 100, 100)
 		},
 		Dark = {
-			Main = Color3.fromRGB(30, 30, 35),
-			Secondary = Color3.fromRGB(50, 50, 55),
-			Tertiary = Color3.fromRGB(70, 130, 180),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Rust = {
-			Main = Color3.fromRGB(37, 35, 33),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(237, 94, 38),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Aqua = {
-			Main = Color3.fromRGB(19, 21, 21),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(51, 153, 137),
-
-			StrongText = Color3.fromHSV(0, 0, 1),        
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Vaporwave = {},
-		OperaGX = {},
-		VisualStudio = {},
-		Neon = {  -- New theme
-			Main = Color3.fromRGB(0, 0, 0),
-			Secondary = Color3.fromRGB(20, 20, 20),
-			Tertiary = Color3.fromRGB(0, 255, 255),
+			Main = Color3.fromRGB(40, 40, 45),
+			Secondary = Color3.fromRGB(60, 60, 65),
+			Tertiary = Color3.fromRGB(100, 150, 255),
 			StrongText = Color3.fromRGB(255, 255, 255),
-			WeakText = Color3.fromRGB(150, 150, 150)
+			WeakText = Color3.fromRGB(180, 180, 180)
 		}
 	},
 	ColorPickerStyles = {
@@ -469,8 +433,20 @@ function Library:create(options)
 		Size = UDim2.new(),
 		Theme = {BackgroundColor3 = "Main"},
 		Centered = true,
-		ClipsDescendants = true		
+		ClipsDescendants = true
 	}):round(10)
+
+	-- Add subtle gradient for originality
+	local gradient = core:object("UIGradient", {
+		Color = ColorSequence.new{
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(240, 240, 240))
+		},
+		Transparency = NumberSequence.new{
+			NumberSequenceKeypoint.new(0, 0.1),
+			NumberSequenceKeypoint.new(1, 0.2)
+		}
+	})
 
 	core:fade(true, nil, 0.2, true)
 
