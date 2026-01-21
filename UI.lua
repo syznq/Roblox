@@ -1,4 +1,4 @@
--- aight lil skid since you wanted the UI source so badly, here you go but remember the license, im watching you
+-- dont be a skid pls!
 local lib = {
     RainbowColorValue = 0,
     HueSelectionPosition = 0,
