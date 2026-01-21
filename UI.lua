@@ -103,19 +103,21 @@ local function MakeDraggable(topbarobject, object)
             StartPosition.Y.Scale,
             StartPosition.Y.Offset + Delta.Y
         )
-        
-        local screenSize = workspace.CurrentCamera.ViewportSize
-        local clampedX = math.clamp(pos.X.Offset, 0, screenSize.X - object.AbsoluteSize.X)
-        local clampedY = math.clamp(pos.Y.Offset, 0, screenSize.Y - object.AbsoluteSize.Y)
-        
-        object.Position = UDim2.new(0, clampedX, 0, clampedY)
+        object.Position = pos
     end
 
     topbarobject.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
             Dragging = true
             DragStart = input.Position
-            StartPosition = object.Position
+            
+            if object.AnchorPoint ~= Vector2.new(0,0) then
+                StartPosition = UDim2.fromOffset(object.AbsolutePosition.X, object.AbsolutePosition.Y)
+                object.AnchorPoint = Vector2.new(0,0)
+                object.Position = StartPosition
+            else
+                StartPosition = object.Position
+            end
             
             input.Changed:Connect(function()
                 if input.UserInputState == Enum.UserInputState.End then
